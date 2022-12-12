@@ -1,0 +1,306 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-size: 100%;
+}
+
+a {
+    color: inherit;
+    outline: none;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+body {
+    background: #4366ff;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    text-size-adjust: 100%;
+    overflow: hidden;
+}
+
+section {
+    display: block;
+}
+
+p {
+    line-height: 1.25em;
+}
+
+div {
+    display: block;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.background.background-0 {
+    background: linear-gradient(to left top,#81c4fa,rgba(117, 219, 250, 0) 70%);
+}
+
+.background.background-1 {
+    background: linear-gradient(to right top,#9698f8,rgba(153, 183, 247, 0) 70%);
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-family: Nanum Gothic Coding,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 16px 22px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #dad7fd;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.5s;
+    border-radius: 5px;
+}
+
+.button:hover {
+    box-shadow: inset 400px 0 0 0 #dad7fd;
+    border-radius: 5px;
+}
+
+.button .border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    border-radius: 5px;
+}
+
+.button .label-hover, .button .label-hover .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform .45s cubic-bezier(.4,0,.25,1);
+    will-change: transform;
+}
+
+.button .label-hover .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fdb06e;
+    transform: translateX(100%);
+}
+
+.content .section-contact .list .button {
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+.content .section-introduction .title {
+    margin-bottom: 0.05em;
+    font-family: Nanum Gothic Coding, sans-serif;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.content {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 80px;
+    font-family: Lato, sans-serif;
+}
+
+.content section {
+    margin-bottom: 80px;
+}
+
+.content section .title {
+    font-family: Nanum Gothic Coding, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.75em;
+}
+
+.content .section-introduction .sub-title {
+    font-family: Nanum Gothic Coding,sans-serif;
+    font-size: 30px;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.content .section.introduction .description {
+    width: 70%;
+}
+
+
+
+.content .section-experience .list {
+    font-family: Nanum Gothic Coding,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.content .section-experience .list .item {
+    margin-bottom: 25px;
+}
+
+.content .section-experience .list .item .name {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.content .section-experience .list .item .period .date {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 5px 8px;
+    font-weight: 700;
+    color: #7E92FB;
+    background: #fff;
+}
+
+ .laptop-3d {
+    position: fixed;
+    top: 100px;
+    right: 85px;
+}
+
+/* Media */
+
+@media screen and (max-width: 1023px) {
+    .button {
+      padding: 15px 20px;
+    }
+    .content {
+        width: auto;
+        margin-left: 45px;
+        margin-right: 170px;
+        padding-top: 45px;
+      }
+    .content .section {
+        margin-bottom: 48px;
+      }
+    .content .section .title {
+        font-size: 33px;
+      }
+    .content .section-introduction .title {
+        font-size: 65px;
+      }
+    .content .section-introduction .sub-title {
+        font-size: 23px;
+      }
+    .content .section-experience .list .item .name {
+        font-size: 16.5px;
+      }
+
+    .content .section-projects .list .item .name {
+        font-size: 19px;
+      }
+    .laptop-3d {
+        top: 60px;
+        right: 50px;
+      }
+  }
+  @media screen and (max-width: 700px) {
+    .button {
+      padding: 12px 16px;
+    }
+    .button .border {
+        border-width: 2.5px;
+      }
+    .content {
+          width: auto;
+          margin-left: 28px;
+          margin-right: 155px;
+          padding-top: 28px;
+        }
+    .content .section {
+          margin-bottom: 35px;
+        }
+    .content .section .title {
+            font-size: 27px;
+          }
+    .content .section-introduction .title {
+            font-size: 55px;
+            margin-bottom: 0.1em;
+          }
+    .content .section-introduction .sub-title {
+            font-size: 19px;
+          }
+    .content .section-introduction .description {
+            width: auto;
+          }
+    .content .section-contact .list .button {
+            margin-right: 5.5px;
+            margin-bottom: 7.5px;
+          }
+    .content .section-experience .list .item .name {
+            font-size: 15.5px;
+          }
+    .content .section-projects .list .item .name {
+            font-size: 15.5px;
+          }
+    .content .section-projects .list .item .button {
+            margin-right: 6.5px;
+            margin-bottom: 8.5px;
+          }
+    .laptop-3d {
+            top: 38px;
+            right: 30px;
+          }
+  }
+  @media screen and (max-width: 560px) {
+    .button {
+      padding: 10.5px 13.5px;
+    }
+    .content {
+        width: auto;
+        margin-left: 18px;
+        margin-right: 18px;
+        padding-top: 18px;
+      }
+    .content .section {
+        margin-bottom: 30px;
+      }
+    .content .section-introduction .title {
+        padding-right: 120px;
+        font-size: 40px;
+      }
+    .content .section-introduction .sub-title {
+        font-size: 18px;
+      }
+    .content .section-contact .list .button {
+        margin-right: 4.5px;
+        margin-bottom: 6.5px;
+      }
+    .content .section-experience .list .item .name {
+        font-size: 14.5px;
+      }
+    .content .section-projects .list .item .name {
+        font-size: 15px;
+      }
+    .content .section-projects .list .item .button {
+        margin-right: 5px;
+        margin-bottom: 7px;
+      }
+    .laptop-3d {
+        position: absolute;
+        top: 24px;
+        right: 20px;
+      }
+  }
+ 
+
+
